@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.default)('The Odin Restaurant', '#1 restaurant in all of Midgard!', 'Endorsed by the Allfather himself!')\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _tabHome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabHome */ \"./src/tabHome.js\");\n\n\n\ncontent = document.querySelector('#content')\ncontent.appendChild((0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.default)('The Odin Restaurant', '#1 restaurant in all of Midgard!', 'Endorsed by the Allfather himself!'))\ncontent.appendChild((0,_tabHome__WEBPACK_IMPORTED_MODULE_1__.default)())\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction pageLoad(title, h3, h4) {\n  let elementTitle, em, elementh3, elementh4\n\n  content = document.querySelector('#content')\n\n  elementTitle = document.createElement('H1')\n  elementTitle.textContent = title\n\n  em = document.createElement('EM')\n  elementh3 = document.createElement('H3')\n  elementh3.textContent = h3\n\n  elementh4 = document.createElement('H4')\n  elementh4.textContent = h4\n\n  em.appendChild(elementh3)\n  content.appendChild(elementTitle)\n  content.appendChild(em)\n  content.appendChild(elementh4)\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction pageLoad(title, h3, h4) {\n  let pageLoad, elementTitle, em, elementh3, elementh4\n\n  pageLoad = document.createElement('DIV')\n\n  elementTitle = document.createElement('H1')\n  elementTitle.textContent = title\n\n  em = document.createElement('EM')\n  elementh3 = document.createElement('H3')\n  elementh3.textContent = h3\n\n  elementh4 = document.createElement('H4')\n  elementh4.textContent = h4\n\n  em.appendChild(elementh3)\n  pageLoad.appendChild(elementTitle)\n  pageLoad.appendChild(em)\n  pageLoad.appendChild(elementh4)\n\n  return pageLoad\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
+
+/***/ }),
+
+/***/ "./src/tabHome.js":
+/*!************************!*\
+  !*** ./src/tabHome.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction tabHome() {\n  let home = document.createElement('DIV')\n  home.setAttribute('class', 'tab')\n  home.setAttribute('id', 'home')\n  home.textContent = 'Home'\n\n  let content = document.createElement('DIV')\n  content.setAttribute('class', 'content')\n  content.setAttribute('id', 'homeContent')\n  content.textContent = 'some content here...'\n\n  home.appendChild(content)\n\n  return home\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabHome);\n\n//# sourceURL=webpack://restaurant-page/./src/tabHome.js?");
 
 /***/ })
 
