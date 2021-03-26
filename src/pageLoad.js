@@ -1,7 +1,7 @@
 function pageLoad(title, h3, h4) {
-  let elementTitle, em, elementh3, elementh4
+  let pageLoad, elementTitle, em, elementh3, elementh4
 
-  content = document.querySelector('#content')
+  pageLoad = document.createElement('DIV')
 
   elementTitle = document.createElement('H1')
   elementTitle.textContent = title
@@ -14,9 +14,11 @@ function pageLoad(title, h3, h4) {
   elementh4.textContent = h4
 
   em.appendChild(elementh3)
-  content.appendChild(elementTitle)
-  content.appendChild(em)
-  content.appendChild(elementh4)
+  pageLoad.appendChild(elementTitle)
+  pageLoad.appendChild(em)
+  pageLoad.appendChild(elementh4)
+
+  return pageLoad
 }
 
 export default pageLoad
