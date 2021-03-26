@@ -1,6 +1,15 @@
 import pageLoad from './pageLoad'
 import tabHome from './tabHome'
+import tabMenu from './tabMenu'
 
 content = document.querySelector('#content')
+content.style.textAlign = 'center'
+
 content.appendChild(pageLoad('The Odin Restaurant', '#1 restaurant in all of Midgard!', 'Endorsed by the Allfather himself!'))
-content.appendChild(tabHome())
+
+let container = document.createElement('DIV')
+container.setAttribute('id', 'container')
+content.appendChild(container)
+
+container.appendChild(tabHome())
+container.appendChild(tabMenu())

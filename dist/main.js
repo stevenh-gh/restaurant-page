@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _tabHome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabHome */ \"./src/tabHome.js\");\n\n\n\ncontent = document.querySelector('#content')\ncontent.appendChild((0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.default)('The Odin Restaurant', '#1 restaurant in all of Midgard!', 'Endorsed by the Allfather himself!'))\ncontent.appendChild((0,_tabHome__WEBPACK_IMPORTED_MODULE_1__.default)())\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _tabHome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabHome */ \"./src/tabHome.js\");\n/* harmony import */ var _tabMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabMenu */ \"./src/tabMenu.js\");\n\n\n\n\ncontent = document.querySelector('#content')\ncontent.style.textAlign = 'center'\n\ncontent.appendChild((0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.default)('The Odin Restaurant', '#1 restaurant in all of Midgard!', 'Endorsed by the Allfather himself!'))\n\nlet container = document.createElement('DIV')\ncontainer.setAttribute('id', 'container')\ncontent.appendChild(container)\n\ncontainer.appendChild((0,_tabHome__WEBPACK_IMPORTED_MODULE_1__.default)())\ncontainer.appendChild((0,_tabMenu__WEBPACK_IMPORTED_MODULE_2__.default)())\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction tabHome() {\n  let home = document.createElement('DIV')\n  home.setAttribute('class', 'tab')\n  home.setAttribute('id', 'home')\n  home.textContent = 'Home'\n\n  let content = document.createElement('DIV')\n  content.setAttribute('class', 'content')\n  content.setAttribute('id', 'homeContent')\n  content.textContent = 'some content here...'\n\n  home.appendChild(content)\n\n  return home\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabHome);\n\n//# sourceURL=webpack://restaurant-page/./src/tabHome.js?");
+
+/***/ }),
+
+/***/ "./src/tabMenu.js":
+/*!************************!*\
+  !*** ./src/tabMenu.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction tabMenu() {\n  let menu = document.createElement('DIV')\n  menu.setAttribute('class', 'tab')\n  menu.setAttribute('id', 'menu')\n  menu.innerText = 'Menu'\n\n  let content = document.createElement('DIV')\n  content.setAttribute('class', 'content')\n  content.setAttribute('id', 'menuContent')\n  content.innerText = 'some content here...'\n\n  menu.appendChild(content)\n\n  return menu\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabMenu);\n\n//# sourceURL=webpack://restaurant-page/./src/tabMenu.js?");
 
 /***/ })
 
