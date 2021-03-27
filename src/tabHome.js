@@ -10,6 +10,6 @@ function tabHome() {
   content.textContent = 'some content here...'
 
 
-  return { home, content }
+  return { home, homeContent: content }
 }
 export default tabHome

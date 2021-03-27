@@ -10,6 +10,6 @@ function tabMenu() {
   content.innerText = 'some content here...'
 
 
-  return { menu, content }
+  return { menu, menuContent: content }
 }
 export default tabMenu

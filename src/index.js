@@ -15,3 +15,11 @@ let { home, homeContent } = tabHome()
 let { menu, menuContent } = tabMenu()
 container.appendChild(home)
 container.appendChild(menu)
+
+home.addEventListener('click', () => {
+  container.appendChild(homeContent)
+})
+
+menu.addEventListener('click', () => {
+  container.appendChild(menuContent)
+})
