@@ -9,8 +9,7 @@ function tabMenu() {
   content.setAttribute('id', 'menuContent')
   content.innerText = 'some content here...'
 
-  menu.appendChild(content)
 
-  return menu
+  return { menu, content }
 }
 export default tabMenu

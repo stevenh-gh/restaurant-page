@@ -9,8 +9,7 @@ function tabHome() {
   content.setAttribute('id', 'homeContent')
   content.textContent = 'some content here...'
 
-  home.appendChild(content)
 
-  return home
+  return { home, content }
 }
 export default tabHome
