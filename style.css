@@ -1,0 +1,6 @@
+#container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  background-color: lightblue;
+}
