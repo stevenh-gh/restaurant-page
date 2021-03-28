@@ -8,6 +8,7 @@ function tabMenu() {
   content.setAttribute('class', 'content')
   content.setAttribute('id', 'menuContent')
   content.innerText = 'some content here...'
+  content.style.display = 'none'
 
 
   return { menu, menuContent: content }

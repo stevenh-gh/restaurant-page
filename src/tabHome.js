@@ -8,6 +8,7 @@ function tabHome() {
   content.setAttribute('class', 'content')
   content.setAttribute('id', 'homeContent')
   content.textContent = 'some content here...'
+  content.style.display = 'none'
 
 
   return { home, homeContent: content }

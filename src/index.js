@@ -15,11 +15,22 @@ let { home, homeContent } = tabHome()
 let { menu, menuContent } = tabMenu()
 container.appendChild(home)
 container.appendChild(menu)
+content.appendChild(homeContent)
+content.appendChild(menuContent)
 
 home.addEventListener('click', () => {
-  container.appendChild(homeContent)
+  tabOnClick(homeContent)
 })
 
 menu.addEventListener('click', () => {
-  container.appendChild(menuContent)
+  tabOnClick(menuContent)
 })
+
+function tabOnClick(contentItem) {
+  let tabContent = content.querySelectorAll('div .content')
+  tabContent.forEach(tc => {
+    tc.style.display = 'none'
+  })
+  contentItem.style.display = 'block'
+}
+
