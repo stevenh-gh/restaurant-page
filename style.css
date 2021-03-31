@@ -4,3 +4,33 @@
   justify-items: center;
   background-color: lightblue;
 }
+
+.foodDiv {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+
+.imageDiv {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: center;
+}
+
+.fName {
+  grid-column-start: 2;
+  font-weight: bold;
+}
+
+.fDesc {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.foodImg {
+  width: 20%;
+}
+
+/* div {
+  border: 1px black solid;
+} */
