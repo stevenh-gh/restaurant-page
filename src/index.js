@@ -1,4 +1,4 @@
-import pageLoad from './pageLoad'
+// import pageLoad from './pageLoad'
 import tabHome from './tabHome'
 import tabMenu from './tabMenu'
 
@@ -9,7 +9,7 @@ let container = document.createElement('DIV')
 container.setAttribute('id', 'container')
 content.appendChild(container)
 
-content.appendChild(pageLoad('The Odin Restaurant', '#1 restaurant in all of Midgard!', 'Endorsed by the Allfather himself!'))
+// content.appendChild(pageLoad('The Odin Restaurant', '#1 restaurant in all of Midgard!', 'Endorsed by the Allfather himself!'))
 
 let { home, homeContent } = tabHome()
 let { menu, menuContent } = tabMenu()
