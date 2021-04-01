@@ -36,7 +36,18 @@ function tabMenu() {
   content.appendChild(makeFood('Adeptus\' Temptation',
     'https://static.wikia.nocookie.net/gensin-impact/images/6/66/Item_Delicious_Adeptus%27_Temptation.png/revision/latest?cb=20201209234129',
     'Increases all party members\' ATK by 260~372 and CRIT Rate by 8~12% for 300s.'))
-
+  content.appendChild(makeFood('Golden Crab',
+    'https://static.wikia.nocookie.net/gensin-impact/images/5/56/Item_Delicious_Golden_Crab.png/revision/latest?cb=20201226191148',
+    'Increases all party members\' DEF by 242~308 and healing effects by 6~10% for 300s.'))
+  content.appendChild(makeFood('Golden Fried Chicken',
+    'https://static.wikia.nocookie.net/gensin-impact/images/6/68/Item_Delicious_Golden_Fried_Chicken.png/revision/latest?cb=20210317180609',
+    'Increases all party members\' ATK by 224~320 and CRIT Rate by 6~10% for 300s.'))
+  content.appendChild(makeFood('Jade Parcels',
+    'https://static.wikia.nocookie.net/gensin-impact/images/8/87/Item_Delicious_Jade_Parcels.png/revision/latest?cb=20201104072405',
+    'Increases all party members\' ATK by 224~320 and CRIT Rate by 6~10% for 300s.'))
+  content.appendChild(makeFood('Moon Pie',
+    'https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Item_Delicious_Moon_Pie.png/revision/latest?cb=20201226064541',
+    'Increases all party members\' Shield Strength by 25~35% and DEF by 165~235 for 300s.'))
 
   content.style.display = 'none'
   return { menu, menuContent: content }
