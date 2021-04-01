@@ -5,11 +5,11 @@ import tabMenu from './tabMenu'
 content = document.querySelector('#content')
 content.style.textAlign = 'center'
 
-content.appendChild(pageLoad('The Odin Restaurant', '#1 restaurant in all of Midgard!', 'Endorsed by the Allfather himself!'))
-
 let container = document.createElement('DIV')
 container.setAttribute('id', 'container')
 content.appendChild(container)
+
+content.appendChild(pageLoad('The Odin Restaurant', '#1 restaurant in all of Midgard!', 'Endorsed by the Allfather himself!'))
 
 let { home, homeContent } = tabHome()
 let { menu, menuContent } = tabMenu()
